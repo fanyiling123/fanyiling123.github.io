@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiling Fan | Cambridge Engineering & Robotics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0b2545;
+            --accent-color: #134074;
+            --text-main: #1d2d44;
+            --text-muted: #4a5568;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --tag-bg: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: var(--text-main); line-height: 1.6; background-color: var(--bg-light); }
+        a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+
+        /* Navigation */
+        nav { position: sticky; top: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); border-bottom: 1px solid #e2e8f0; z-index: 100; }
+        .nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary-color); }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+
+        /* Layout Container */
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        section { margin-bottom: 4rem; scroll-margin-top: 5rem; }
+        h2 { font-size: 1.75rem; color: var(--primary-color); border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+
+        /* Hero / About Me */
+        .hero { display: flex; gap: 2.5rem; align-items: center; }
+        .hero-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .hero-text h1 { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
+        .hero-text .subtitle { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .social-links { display: flex; gap: 1rem; margin-top: 1rem; font-size: 1.2rem; }
+        .btn-cv { display: inline-block; background: var(--primary-color); color: #fff; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.9rem; margin-top: 1rem; }
+        .btn-cv:hover { background: var(--accent-color); text-decoration: none; }
+
+        /* Research Section (Arif Kerem Dayı Style) */
+        .research-item { display: flex; gap: 1.5rem; background: var(--card-bg); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .research-media { flex: 0 0 40%; border-radius: 6px; overflow: hidden; background: #000; display: flex; align-items: center; justify-content: center; max-height: 220px; }
+        .research-media img, .research-media video { width: 100%; height: 100%; object-fit: cover; }
+        .research-content { flex: 1; }
+        .research-title { font-size: 1.25rem; font-weight: 600; color: var(--primary-color); margin-bottom: 0.5rem; }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+        .tag { background: var(--tag-bg); font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600; color: var(--text-muted); }
+        .research-desc { font-size: 0.95rem; color: var(--text-muted); }
+
+        /* Industry Timeline */
+        .timeline-item { background: var(--card-bg); padding: 1.25rem; border-radius: 8px; border-left: 4px solid var(--accent-color); margin-bottom: 1rem; border: 1px solid #e2e8f0; border-left-width: 4px; }
+        .timeline-header { display: flex; justify-content: space-between; font-weight: 600; }
+        .timeline-sub { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+
+        /* Honors List */
+        .honor-list { list-style: none; }
+        .honor-list li { padding: 0.5rem 0; border-bottom: 1px dashed #e2e8f0; display: flex; justify-content: space-between; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .research-item { flex-direction: column; }
+            .research-media { flex: 1 1 100%; max-height: 250px; }
+            .social-links { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Yiling Fan</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#industry">Industry</a></li>
+                <li><a href="#honors">Honors & Writing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- 1. About Me (Shao Yuan Style Layout) -->
+        <section id="about">
+            <div class="hero">
+                <img src="avatar.jpg" alt="Yiling Fan" class="hero-img">
+                <div class="hero-text">
+                    <h1>Yiling Fan (范艺龄)</h1>
+                    <div class="subtitle">MEng Candidate in Engineering | University of Cambridge</div>
+                    <p>I am a final-year MEng student at the <strong>University of Cambridge</strong> (Murray Edwards College), recipient of the <strong>Mary Dyson Scholarship</strong>. My core interests lie at the intersection of <strong>robotic decision-making & control</strong>, <strong>state estimation (SLAM/IMU)</strong>, and <strong>embodied physical AI</strong>, with a particular emphasis on dynamic bipedal and humanoid platforms.</p>
+                    
+                    <div class="social-links">
+                        <a href="mailto:yf334@cam.ac.uk" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/yourgithub" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourlinkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV_Yiling_Fan.pdf" target="_blank" class="btn-cv"><i class="fas fa-file-pdf"></i> Download Full CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Research Projects (Arif Kerem Dayı Style Layout) -->
+        <section id="research">
+            <h2>Research & Academic Projects</h2>
+
+            <!-- Research Project 1: SLAM -->
+            <div class="research-item">
+                <div class="research-media">
+                    <!-- 放你的 Visual/LiDAR Odometry 演示 GIF 或者 MP4 视频 -->
+                    <img src="assets/vo_demo.gif" alt="Visual & LiDAR Odometry Demo">
+                </div>
+                <div class="research-content">
+                    <div class="research-title">Multi-Modal Odometry & State Estimation for Mobile Robots</div>
+                    <div class="tags">
+                        <span class="tag">State Estimation</span>
+                        <span class="tag">ORB_SLAM2</span>
+                        <span class="tag">2D LiDAR SAM</span>
+                        <span class="tag">IMU Fusion</span>
+                    </div>
+                    <p class="research-desc">
+                        Investigating dynamic pose estimation across noisy and unstructured environments. Evaluated motor commands with IMU dead-reckoning, addressed scale ambiguities in monocular ORB_SLAM2, and currently implementing 2D LiDAR position tracking using the <code>sam_toolbox</code> for robust state feedback.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Research Project 2: MIMO Control -->
+            <div class="research-item">
+                <div class="research-media">
+                    <img src="assets/mimo_control.gif" alt="MIMO Gain Scheduling Control">
+                </div>
+                <div class="research-content">
+                    <div class="research-title">Gain Scheduling & State-Feedback Control for MIMO Evaporator</div>
+                    <div class="tags">
+                        <span class="tag">Control Theory</span>
+                        <span class="tag">MIMO</span>
+                        <span class="tag">Gain Scheduling</span>
+                        <span class="tag">State Feedback</span>
+                    </div>
+                    <p class="research-desc">
+                        Designed advanced multivariable control systems for a Multi-Input Multi-Output (MIMO) evaporator. Derived state-space models and synthesized Gain Scheduling alongside State-Feedback controllers to maintain asymptotic closed-loop stability across varying operational regimes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Research Project 3: IDP Bot -->
+            <div class="research-item">
+                <div class="research-media">
+                    <img src="assets/idp_robot.gif" alt="Autonomous Robot IDP">
+                </div>
+                <div class="research-content">
+                    <div class="research-title">Autonomous Line-Following & Sorting Robot (IDP)</div>
+                    <div class="tags">
+                        <span class="tag">Hardware Integration</span>
+                        <span class="tag">PCB Design</span>
+                        <span class="tag">Microcontrollers</span>
+                        <span class="tag">Sensor Calibration</span>
+                    </div>
+                    <p class="research-desc">
+                        Led the electrical engineering sub-team (team of 6) at Cambridge to build an autonomous robot. Designed and soldered custom adapter PCB interface boards, integrated PicoBot microcontrollers, and calibrated optical, ultrasonic, and magnetic sensors for low-latency reactive control.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Research Project 4: RF & Hardware -->
+            <div class="research-item">
+                <div class="research-media">
+                    <img src="assets/rf_system.gif" alt="Transmitter Receiver Circuit">
+                </div>
+                <div class="research-content">
+                    <div class="research-title">Wireless RF Transmitter & Receiver Communications Link</div>
+                    <div class="tags">
+                        <span class="tag">RF Electronics</span>
+                        <span class="tag">Signal Processing</span>
+                        <span class="tag">Analog Circuit</span>
+                    </div>
+                    <p class="research-desc">
+                        Engineered and built an end-to-end analog RF transmitter and receiver system. Successfully transmitted real-time audio signals from a CD player through custom modulation/demodulation circuitry, outputting clean audio through a speaker system.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 3. Industrial Experience (Shao Yuan Style) -->
+        <section id="industry">
+            <h2>Industrial Experience</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Geely Auto Research Institute — Autonomous Parking Dept.</span>
+                    <span>Jul 2025 – Sep 2025</span>
+                </div>
+                <div class="timeline-sub">Summer Intern | Ningbo, China</div>
+                <ul>
+                    <li>Utilized TSMaster for vehicle chassis control and measured turning radii under dynamic steering wheel angles across multiple car models.</li>
+                    <li>Constructed PID control algorithms, state-space equations, and Simulink simulation models for multi-DOF dynamic systems.</li>
+                    <li>Analyzed autonomous parking field tickets by evaluating vehicle speed, heading angle, and lateral error using MATLAB and PlotJuggler.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Geely Auto Research Institute — Energy Control Dept.</span>
+                    <span>Jul 2024 – Aug 2024</span>
+                </div>
+                <div class="timeline-sub">Summer Intern | Ningbo, China</div>
+                <ul>
+                    <li>Developed automated data visualization tools using Python (Pyecharts) and MySQL for battery error analytics across multiple vehicle fleets.</li>
+                    <li>Contributed to AI Agent development by engineering prompt logic and query categorization for technical knowledge retrieval.</li>
+                    <li>Awarded "Outstanding Individual" and "Outstanding Team" honours.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 4. Honors, Awards & Coursework -->
+        <section id="honors">
+            <h2>Honors, Awards & Skills</h2>
+            <ul class="honor-list">
+                <li>
+                    <span><strong>Mary Dyson Scholarship</strong> (Awarded by James Dyson Foundation)</span>
+                    <span>2024 & 2025</span>
+                </li>
+                <li>
+                    <span><strong>National Talent Program in Physics</strong> (Ministry of Education & Zhejiang University)</span>
+                    <span>2020 – 2021</span>
+                </li>
+                <li>
+                    <span><strong>Senior Mathematical Challenge</strong> (Global Gold & Best in School, Top 10%)</span>
+                    <span>2022</span>
+                </li>
+            </ul>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Key Technical Skills</h3>
+            <p><strong>Languages & Software:</strong> Python, C++, MATLAB & Simulink, SolidWorks, KiCad, LTSpice, PicoScope, MySQL, PlotJuggler, TSMaster, LaTeX.</p>
+            <p><strong>Core Coursework:</strong> Systems & Control, Signals & Systems, Statistical Signal Processing, Radio Frequency Electronics, Integrated Digital Electronics, Information Theory & Coding.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
