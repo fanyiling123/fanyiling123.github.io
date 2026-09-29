@@ -91,7 +91,7 @@
             <div class="hero">
                 <img src="avatar.jpg" alt="Yiling Fan" class="hero-img">
                 <div class="hero-text">
-                    <h1>Yiling Fan (范艺龄)</h1>
+                    <h1>Yiling Fan (樊怡伶)</h1>
                     <div class="subtitle">MEng Candidate in Engineering | University of Cambridge</div>
                     <p>I am a final-year MEng student at the <strong>University of Cambridge</strong> (Murray Edwards College), recipient of the <strong>Mary Dyson Scholarship</strong>. My core interests lie at the intersection of <strong>robotic decision-making & control</strong>, <strong>state estimation (SLAM/IMU)</strong>, and <strong>embodied physical AI</strong>, with a particular emphasis on dynamic bipedal and humanoid platforms.</p>
                     
@@ -105,87 +105,107 @@
             </div>
         </section>
 
-        <!-- 2. Research Projects (Arif Kerem Dayı Style Layout) -->
-        <section id="research">
-            <h2>Research & Academic Projects</h2>
 
-            <!-- Research Project 1: SLAM -->
+<!-- 2. Research & Engineering Projects -->
+        <section id="research">
+            <h2>Research & Engineering Projects</h2>
+
+            <!-- Project 1: Visual Odometry -->
             <div class="research-item">
                 <div class="research-media">
-                    <!-- 放你的 Visual/LiDAR Odometry 演示 GIF 或者 MP4 视频 -->
-                    <img src="assets/vo_demo.gif" alt="Visual & LiDAR Odometry Demo">
+                    <img src="assets/vo_demo.gif" alt="Visual Odometry Demo">
                 </div>
                 <div class="research-content">
-                    <div class="research-title">Multi-Modal Odometry & State Estimation for Mobile Robots</div>
+                    <div class="research-title">1. Visual & Multi-Modal Odometry for Dynamic State Estimation</div>
                     <div class="tags">
                         <span class="tag">State Estimation</span>
                         <span class="tag">ORB_SLAM2</span>
                         <span class="tag">2D LiDAR SAM</span>
-                        <span class="tag">IMU Fusion</span>
+                        <span class="tag">IMU Sensor Fusion</span>
                     </div>
                     <p class="research-desc">
-                        Investigating dynamic pose estimation across noisy and unstructured environments. Evaluated motor commands with IMU dead-reckoning, addressed scale ambiguities in monocular ORB_SLAM2, and currently implementing 2D LiDAR position tracking using the <code>sam_toolbox</code> for robust state feedback.
+                        Evaluated and implemented multi-modal state estimation algorithms for mobile platforms in dynamic environments. Integrated IMU dead-reckoning with motor encoders, resolved scale ambiguity in monocular ORB_SLAM2, and incorporated 2D LiDAR pose tracking using the SAM toolbox for drift-resistant localization.
                     </p>
                 </div>
             </div>
 
-            <!-- Research Project 2: MIMO Control -->
+            <!-- Project 2: IDP Autonomous Robot -->
             <div class="research-item">
                 <div class="research-media">
-                    <img src="assets/mimo_control.gif" alt="MIMO Gain Scheduling Control">
+                    <img src="assets/idp_robot.gif" alt="IDP Autonomous Robot">
                 </div>
                 <div class="research-content">
-                    <div class="research-title">Gain Scheduling & State-Feedback Control for MIMO Evaporator</div>
+                    <div class="research-title">2. Autonomous Line-Following & Sorting Mobile Robot (IDP)</div>
                     <div class="tags">
-                        <span class="tag">Control Theory</span>
-                        <span class="tag">MIMO</span>
-                        <span class="tag">Gain Scheduling</span>
-                        <span class="tag">State Feedback</span>
-                    </div>
-                    <p class="research-desc">
-                        Designed advanced multivariable control systems for a Multi-Input Multi-Output (MIMO) evaporator. Derived state-space models and synthesized Gain Scheduling alongside State-Feedback controllers to maintain asymptotic closed-loop stability across varying operational regimes.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Research Project 3: IDP Bot -->
-            <div class="research-item">
-                <div class="research-media">
-                    <img src="assets/idp_robot.gif" alt="Autonomous Robot IDP">
-                </div>
-                <div class="research-content">
-                    <div class="research-title">Autonomous Line-Following & Sorting Robot (IDP)</div>
-                    <div class="tags">
-                        <span class="tag">Hardware Integration</span>
+                        <span class="tag">System Integration</span>
                         <span class="tag">PCB Design</span>
                         <span class="tag">Microcontrollers</span>
                         <span class="tag">Sensor Calibration</span>
                     </div>
                     <p class="research-desc">
-                        Led the electrical engineering sub-team (team of 6) at Cambridge to build an autonomous robot. Designed and soldered custom adapter PCB interface boards, integrated PicoBot microcontrollers, and calibrated optical, ultrasonic, and magnetic sensors for low-latency reactive control.
+                        Led the electrical sub-team at Cambridge to construct an autonomous mobile robot from scratch. Designed custom adapter PCB interface boards, programmed PicoBot microcontrollers for low-latency reactive control, and calibrated optical, ultrasonic, and magnetic sensor arrays.
                     </p>
                 </div>
             </div>
 
-            <!-- Research Project 4: RF & Hardware -->
+            <!-- Project 3: Optical Fiber Link -->
             <div class="research-item">
                 <div class="research-media">
-                    <img src="assets/rf_system.gif" alt="Transmitter Receiver Circuit">
+                    <img src="assets/fiber_link.mp4" alt="Optical Fiber Link System">
                 </div>
                 <div class="research-content">
-                    <div class="research-title">Wireless RF Transmitter & Receiver Communications Link</div>
+                    <div class="research-title">3. End-to-End Analog Optical Fiber Communications Link</div>
                     <div class="tags">
-                        <span class="tag">RF Electronics</span>
+                        <span class="tag">Optoelectronics</span>
+                        <span class="tag">Analog Circuit Design</span>
                         <span class="tag">Signal Processing</span>
-                        <span class="tag">Analog Circuit</span>
                     </div>
                     <p class="research-desc">
-                        Engineered and built an end-to-end analog RF transmitter and receiver system. Successfully transmitted real-time audio signals from a CD player through custom modulation/demodulation circuitry, outputting clean audio through a speaker system.
+                        Engineered an analog optical fiber transmitter and receiver circuit. Designed LED driving circuitry, photodiode transimpedance amplifiers, and filtering stages to transmit high-fidelity real-time signals over optical fiber with minimal distortion.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 4: MIMO Control -->
+            <div class="research-item">
+                <div class="research-media">
+                    <img src="assets/mimo_control.png" alt="MIMO Control System">
+                </div>
+                <div class="research-content">
+                    <div class="research-title">4. Gain Scheduling & State-Feedback Control for MIMO Systems</div>
+                    <div class="tags">
+                        <span class="tag">Control Theory</span>
+                        <span class="tag">MIMO</span>
+                        <span class="tag">Gain Scheduling</span>
+                        <span class="tag">State Space</span>
+                    </div>
+                    <p class="research-desc">
+                        Developed multivariable control strategies for a Multi-Input Multi-Output (MIMO) system. Formulated state-space models, synthesized state-feedback controllers, and implemented Gain Scheduling to guarantee closed-loop asymptotic stability across nonlinear operating regimes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 5: Structural Design -->
+            <div class="research-item">
+                <div class="research-media">
+                    <img src="assets/structural_design.jpg" alt="CAD Structural Design">
+                </div>
+                <div class="research-content">
+                    <div class="research-title">5. Precision CAD Structural & Mechanical Mechanism Design</div>
+                    <div class="tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Mechanical Design</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">FEA Analysis</span>
+                    </div>
+                    <p class="research-desc">
+                        Designed mechanical chassis, mounting structures, and robotic enclosures using SolidWorks. Performed stress/strain analyses and optimized component layouts for structural rigidity, lightweighting, and seamless hardware assembly.
                     </p>
                 </div>
             </div>
 
         </section>
+
 
         <!-- 3. Industrial Experience (Shao Yuan Style) -->
         <section id="industry">
