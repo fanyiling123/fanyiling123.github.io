@@ -72,6 +72,33 @@
         .honor-list { list-style: none; }
         .honor-list li { padding: 0.5rem 0; border-bottom: 1px dashed #e2e8f0; display: flex; justify-content: space-between; }
 
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .status-badge {
+            background: #e8f3ed;
+            color: #276749;
+            padding: 0.15rem 0.55rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .supervisor {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+
+        
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero { flex-direction: column; text-align: center; }
@@ -143,6 +170,16 @@
                 </div>
                 <div class="research-content">
                     <div class="research-title">Visual & Multi-Modal Odometry for Robot State Estimation</div>
+
+                    <div class="project-meta">
+                        <span>Mar 2026 – Present</span>
+                        <span class="status-badge">Ongoing</span>
+                    </div>
+                    
+                    <p class="supervisor">
+                        Supervised by Prof. Claudel
+                    </p>
+                    
                     <div class="tags">
                         <span class="tag">State Estimation</span>
                         <span class="tag">ORB_SLAM2</span>
@@ -166,6 +203,11 @@
                 </div>
                 <div class="research-content">
                     <div class="research-title">Autonomous Line-Following & Sorting Mobile Robot (IDP)</div>
+
+                    <div class="project-meta">
+                        <span>Nov 2024</span>
+                    </div>
+                                        
                     <div class="tags">
                         <span class="tag">System Integration</span>
                         <span class="tag">PCB Design</span>
@@ -185,6 +227,11 @@
                 </div>
                 <div class="research-content">
                     <div class="research-title">Multivariable Control of a Nonlinear Industrial Evaporator</div>
+
+                    <div class="project-meta">
+                        <span>May 2026</span>
+                    </div>
+                    
                     <div class="tags">
                         <span class="tag">Control Theory</span>
                         <span class="tag">MIMO</span>
@@ -204,6 +251,11 @@
                 </div>
                 <div class="research-content">
                     <div class="research-title">2 Mbit/s Polymer Optical Fibre Communication Link</div>
+
+                    <div class="project-meta">
+                        <span>May 2026</span>
+                    </div>
+                                        
                     <div class="tags">
                         <span class="tag">Optoelectronics</span>
                         <span class="tag">Analog Circuit Design</span>
@@ -254,13 +306,13 @@
             <h2>Selected Technical Writing</h2>
             <p class="section-intro">Selected technical reports based on coursework and engineering projects completed at the University of Cambridge.</p>
             <article class="writing-item">
-                <div class="writing-meta">Control Systems · Coursework technical report</div>
+                <div class="writing-meta">Control Systems · 2026 · Coursework technical report</div>
                 <h3>Multivariable Control of a Nonlinear Industrial Evaporator</h3>
                 <p>Design and comparative evaluation of decentralised PI, gain-scheduled, state-feedback and LQR controllers, including robustness analysis and anti-windup compensation.</p>
                 <a href="pdf/GF1_Control_Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="paper-link"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read technical report</a>
             </article>
             <article class="writing-item">
-                <div class="writing-meta">Analogue Electronics &amp; Communications · Collaborative project technical report</div>
+                <div class="writing-meta">Analogue Electronics &amp; Communications · 2026 · Coursework technical report</div>
                 <h3>Design and Experimental Characterisation of a 2 Mbit/s Polymer Optical Fibre Link</h3>
                 <p>Design and experimental validation of AGC and comparator stages for a 20 m optical communication link, including signal-integrity and eye-diagram measurements.</p>
                 <a href="pdf/GB1_Optical_Link_Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="paper-link"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read technical report</a>
